@@ -1,0 +1,20 @@
+import
+input = open('../text')
+text = input.read()
+instances = text.split('\n\n')
+
+first = instances[0]
+split = first.split('\n')
+# grab label (might need it later?)
+
+# remove label
+split = split[1:]
+# length of this gives us number of tokens
+
+# create tokensXtokens matrix
+
+# create list for storing actual tokens
+
+# for each line, split the line, and starting at index 7, add the label (lookup in dict) to matrix
+
+# Need list of autograd variables where autograd variables are embeddings

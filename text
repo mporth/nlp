@@ -1,0 +1,72 @@
+#20001001
+1	Pierre	Pierre	NNP	-	+	_	_	_	_	_	_	_	_	_	_	_
+2	Vinken	_generic_proper_ne_	NNP	-	-	compound	_	_	ARG1	ARG1	_	_	_	_	_	_
+3	,	_	,	-	-	_	_	_	_	_	_	_	_	_	_	_
+4	61	_generic_card_ne_	CD	-	+	_	_	_	_	_	_	_	_	_	_	_
+5	years	year	NNS	-	+	_	ARG1	_	_	_	_	_	_	_	_	_
+6	old	old	JJ	-	+	_	_	measure	_	_	_	_	_	_	_	_
+7	,	_	,	-	-	_	_	_	_	_	_	_	_	_	_	_
+8	will	will	MD	-	-	_	_	_	_	_	_	_	_	_	_	_
+9	join	join	VB	+	+	_	_	_	_	_	_	ARG1	_	_	_	_
+10	the	the	DT	-	+	_	_	_	_	_	_	_	_	_	_	_
+11	board	board	NN	-	-	_	_	_	_	ARG2	BV	_	_	_	_	_
+12	as	as	IN	-	+	_	_	_	_	_	_	_	_	_	_	loc
+13	a	a	DT	-	+	_	_	_	_	_	_	_	_	_	_	_
+14	nonexecutive	_generic_jj_	JJ	-	+	_	_	_	_	_	_	_	_	_	_	_
+15	director	director	NN	-	-	_	_	_	_	_	_	ARG2	BV	ARG1	_	_
+16	Nov.	Nov.	NNP	-	+	_	_	_	_	_	_	_	_	_	_	_
+17	29	_generic_dom_card_ne_	CD	-	+	_	_	_	_	_	_	_	_	_	of	_
+18	.	_	.	-	-	_	_	_	_	_	_	_	_	_	_	_
+
+#20001002
+1	Mr.	Mr.	NNP	-	+	_	_	_	_	_	_	_	_
+2	Vinken	_generic_proper_ne_	NNP	-	-	compound	ARG1	_	_	_	_	_	_
+3	is	is	VBZ	+	+	_	_	_	_	_	_	_	_
+4	chairman	chairman	NN	-	-	_	ARG2	ARG1	_	_	_	_	_
+5	of	of	IN	-	+	_	_	_	_	_	_	_	_
+6	Elsevier	_generic_proper_ne_	NNP	-	-	_	_	ARG2	compound	_	_	_	appos
+7	N.V.	N.V.	NNP	-	+	_	_	_	_	_	_	_	_
+8	,	_	,	-	-	_	_	_	_	_	_	_	_
+9	the	the	DT	-	+	_	_	_	_	_	_	_	_
+10	Dutch	Dutch	JJ	-	+	_	_	_	_	_	_	_	_
+11	publishing	publish	NN	-	+	_	_	_	_	_	_	_	_
+12	group	group	NN	-	+	_	_	_	_	BV	ARG1	compound	_
+13	.	_	.	-	-	_	_	_	_	_	_	_	_
+
+#20003001
+1	A	a	DT	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+2	form	form	NN	-	+	BV	_	_	_	_	_	_	ARG1	_	_	_	_	_	_	_	_	_	_	_	_
+3	of	of	IN	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+4	asbestos	asbestos	NN	-	-	_	ARG1	_	ARG2	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+5	once	once	RB	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+6	used	use	VBN	-	+	_	_	ARG1	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+7	to	to	TO	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+8	make	make	VB	-	+	_	_	_	ARG3	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+9	Kent	Kent	NNP	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+10	cigarette	cigarette	NN	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+11	filters	filter	NNS	-	-	_	_	_	_	ARG2	compound	compound	_	_	_	_	_	_	_	_	_	_	_	_	_
+12	has	has	VBZ	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+13	caused	cause	VBN	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	ARG2
+14	a	a	DT	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+15	high	high	JJ	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+16	percentage	percentage	NN	-	+	_	_	_	_	_	_	_	ARG2	BV	ARG1	_	_	_	_	_	_	_	_	_	_
+17	of	of	IN	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+18	cancer	cancer	NN	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+19	deaths	death	NNS	-	-	_	_	_	_	_	_	_	_	_	_	ARG1	compound	ARG1	_	_	_	_	_	_	_
+20	among	among	IN	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+21	a	a	DT	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+22	group	group	NN	-	+	_	_	_	_	_	_	_	_	_	_	_	_	ARG2	BV	_	_	_	_	_	_
+23	of	of	IN	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+24	workers	worker	NNS	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	ARG1	ARG2	_	_	_	_
+25	exposed	expose	VBN	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	ARG1	_
+26	to	to	TO	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+27	it	it	PRP	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	ARG3	_	_	_	_
+28	more	more+than	RBR	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	mwe	_	_	_
+29	than	more+than	IN	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+30	30	_generic_card_ne_	CD	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+31	years	year	NNS	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	ARG1	ARG2	_
+32	ago	ago	RB	-	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	ARG1	_	_	_
+33	,	_	,	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+34	researchers	researcher	NNS	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	ARG1
+35	reported	report	VBD	+	+	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_
+36	.	_	.	-	-	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_	_

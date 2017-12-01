@@ -1,0 +1,27 @@
+import pickle
+
+# Open file
+input = open('./data/2015/en.dm.sdp')
+
+# Create dict of edge type -> index
+edge_types = {}
+
+# While there are more lines, read lines
+for line in input:
+    # Split on tab
+    split_line = line.split('\t')
+    # Make sure this isn't the first line of
+    # this instance or an empty line
+    if len(split_line) > 1:
+        for i in range(7, len(split_line) - 1):
+            token = split_line[i]
+            # Add label and its index to dict if
+            # it isn't already in there
+            if token not in edge_types:
+                edge_types[token] = len(edge_types)
+input.close()
+
+# Write dict to file
+output = open('./data/2015/dm_edge_types.pickle', 'wb')
+pickle.dump(edge_types, output)
+output.close()
