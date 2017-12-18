@@ -1,20 +1,63 @@
-import
-input = open('../text')
-text = input.read()
-instances = text.split('\n\n')
+import torch.nn as nn
+import torch.optim as optim
+import pickle
+#import BiLSTM
+import numpy as np
+from torch.nn import Linear, Module, ModuleList, Tanh
+import torch.autograd as autograd
+import torch.nn.functional as F
+import cPickle as pickle
 
-first = instances[0]
-split = first.split('\n')
-# grab label (might need it later?)
 
-# remove label
-split = split[1:]
-# length of this gives us number of tokens
+# Make dict of labels
+labels = pickle.load(open('data/2015/dm_edge_types.pickle', 'rb'))
 
-# create tokensXtokens matrix
+EMBEDDING_DIM = 300 # Get from GLOVE file
+HIDDEN_DIM = 100
+LABELSET_SIZE = len(labels)
+EPOCHS = 300
 
-# create list for storing actual tokens
+def read_sentence(input):
+    line = input.readline()
+    lines = []
 
-# for each line, split the line, and starting at index 7, add the label (lookup in dict) to matrix
+    if not line:
+        return None, None
+    else:
+        while line and line.strip() is not "":
+            lines.append(line)
+            line = input.readline()
 
-# Need list of autograd variables where autograd variables are embeddings
+        tokens = []
+        targets = []
+
+        lines = lines[1:]
+        num_tokens = len(lines)
+        split_lines = []
+        predicates = []
+
+        for i in range(num_tokens):
+            lines[i] = lines[i][:-1]
+            split_line = lines[i].split('\t')
+            tokens.append(split_line[1])
+            split_lines.append(split_line)
+            if split_line[5] is '+':
+                predicates.append(i)
+
+        for i in range(num_tokens):
+            for j in range(num_tokens):
+                labels_one_hot = np.zeros(LABELSET_SIZE)
+                if j in predicates:
+                    labels_one_hot[labels[split_lines[i][6 + predicates.index(j)]]] = 1
+                else:
+                    labels_one_hot[labels['_']] = 1
+            targets.append(labels_one_hot)
+
+        return tokens, targets
+
+input = open('./data/2015/en.dm.sdp')
+input.readline()
+tokens, targets = read_sentence(input)
+print(tokens)
+print(targets)
+

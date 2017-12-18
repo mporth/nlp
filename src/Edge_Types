@@ -1,4 +1,4 @@
-import pickle
+import cPickle as pickle
 
 # Open file
 input = open('./data/2015/en.dm.sdp')
@@ -13,12 +13,14 @@ for line in input:
     # Make sure this isn't the first line of
     # this instance or an empty line
     if len(split_line) > 1:
-        for i in range(7, len(split_line) - 1):
+        for i in range(6, len(split_line) - 1):
             token = split_line[i]
             # Add label and its index to dict if
             # it isn't already in there
             if token not in edge_types:
                 edge_types[token] = len(edge_types)
+
+print(edge_types)
 input.close()
 
 # Write dict to file
